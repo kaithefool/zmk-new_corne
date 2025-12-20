@@ -64,8 +64,8 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Sft+$$mdi:arrow-left-bold$$
-  - Ctl+Sft+$$mdi:arrow-right-bold$$
+  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: 'Gui+Sft+[', s: 'Gui+Sft+{'}
   - {t: 'Sft+Gui+]', s: 'Sft+Gui+}'}
   - {t: Sft+Gui+\, s: Sft+Gui+|}
@@ -81,8 +81,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-caps$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Sft+$$mdi:arrow-left-bold$$
+  - Ctl+Sft+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
