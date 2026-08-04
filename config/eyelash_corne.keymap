@@ -44,11 +44,6 @@
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
-
-        layer_3 {
-            bindings = <&mo 3>;
-            key-positions = <43 46>;
-        };
     };
 
     keymap {
@@ -74,7 +69,7 @@
 &trans  &kp N1     &kp N2     &kp N3            &kp N4             &kp N5                                       &mmv MOVE_UP                     &kp N6      &kp N7    &kp N8         &kp N9        &kp N0     &trans
 &trans  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp DELETE  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
 &trans  &none      &none      &kp SQT           &kp GRAVE          &none          &kp C_MUTE                    &mmv MOVE_DOWN                   &kp INSERT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans
-                              &trans            &trans             &trans                                                                        &trans      &trans    &trans
+                              &trans            &mo 3              &trans                                                                        &trans      &trans    &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -86,13 +81,13 @@
 &kp ESCAPE    &kp EXCL        &kp AT    &kp HASH           &kp DLLR         &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS              &kp ASTRK               &kp LPAR           &kp RPAR               &trans
 &kp CAPSLOCK  &kp UNDERSCORE  &kp PLUS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp PIPE             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none      &kp LG(LEFT_BRACKET)  &kp LS(LC(LEFT_ARROW))  &kp LS(LC(RIGHT))  &kp LG(RIGHT_BRACKET)  &trans
 &trans        &none           &none     &kp DOUBLE_QUOTES  &kp TILDE        &none      &trans                    &mmv MOVE_DOWN                   &none      &none                 &none                   &none              &none                  &trans
-                                        &trans             &trans           &trans                                                                &trans     &trans                &trans
+                                        &trans             &trans           &trans                                                                &trans     &mo 3                 &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
-        layer_3 {
+        func_layer {
             display-name = "Fn";
             bindings = <
 &kp F11  &kp F1  &kp F2             &kp F3      &kp F4           &kp F5                            &mmv MOVE_UP                     &kp F6     &kp F7          &kp F8          &kp F9        &kp F10          &kp F12
