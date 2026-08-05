@@ -90,10 +90,10 @@
         func_layer {
             display-name = "Fn";
             bindings = <
-&kp F11  &kp F1  &kp F2             &kp F3      &kp F4           &kp F5                            &mmv MOVE_UP                     &kp F6     &kp F7          &kp F8          &kp F9        &kp F10          &kp F12
-&trans   &none   &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &none             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans   &none   &kp C_PREV         &kp C_PLAY  &kp C_NEXT       &none   &trans                    &mmv MOVE_DOWN                   &mkp RCLK  &trans          &trans          &trans        &trans           &trans
-                                    &trans      &trans           &trans                                                             &trans     &trans          &trans
+&kp F11  &kp F1     &kp F2             &kp F3      &kp F4           &kp F5                               &mmv MOVE_UP                     &kp F6  &kp F7          &kp F8          &kp F9          &kp F10          &kp F12
+&trans   &mkp LCLK  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &mkp RCLK            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
+&trans   &none      &kp C_PREV         &kp C_PLAY  &kp C_NEXT       &none      &trans                    &mmv MOVE_DOWN                   &trans  &trans          &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans
+                                       &trans      &trans           &trans                                                                &trans  &trans          &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
