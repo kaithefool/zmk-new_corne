@@ -26,15 +26,6 @@
             #sensor-binding-cells = <0>;
             tap-ms = <0>;
         };
-
-        lmt: lmt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Long Mod Tap";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
     };
 
     combos {
@@ -53,7 +44,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E         &kp R  &kp T                                       &mmv MOVE_UP                     &kp Y      &kp U  &kp I          &kp O    &kp P     &kp ENTER
-&mt LCTRL ESCAPE  &kp A  &kp S  &kp D         &kp F  &kp G                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H      &kp J  &kp K          &kp L    &kp SEMI  &lmt RCTRL CAPS
+&mt LCTRL ESCAPE  &kp A  &kp S  &kp D         &kp F  &kp G                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H      &kp J  &kp K          &kp L    &kp SEMI  &mt LCTRL SINGLE_QUOTE
 &kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V  &kp B         &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                                 &kp LEFT_ALT  &mo 2  &kp LEFT_GUI                                                                 &kp SPACE  &mo 1  &kp BACKSPACE
             >;
@@ -68,7 +59,7 @@
             bindings = <
 &trans  &kp N1     &kp N2     &kp N3            &kp N4             &kp N5                                       &mmv MOVE_UP                     &kp N6    &kp N7         &kp N8        &kp N9     &kp N0        &trans
 &trans  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp DELETE    &trans
-&trans  &trans     &trans     &kp SQT           &kp GRAVE          &none          &kp C_MUTE                    &mmv MOVE_DOWN                   &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp CAPSLOCK  &trans
+&trans  &kp GRAVE  &trans     &trans            &trans             &trans         &kp C_MUTE                    &mmv MOVE_DOWN                   &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &kp CAPSLOCK  &trans
                               &trans            &mo 3              &trans                                                                        &trans    &trans         &trans
             >;
 
@@ -78,10 +69,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL        &kp AT    &kp HASH           &kp DLLR         &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS  &kp ASTRK                 &kp LPAR                   &kp RPAR  &trans
-&trans  &kp UNDERSCORE  &kp PLUS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp PIPE             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none      &trans    &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &trans    &trans
-&trans  &none           &none     &kp DOUBLE_QUOTES  &kp TILDE        &none      &trans                    &mmv MOVE_DOWN                   &none      &none     &kp LG(LEFT_BRACKET)      &kp LG(RIGHT_BRACKET)      &none     &trans
-                                  &trans             &trans           &trans                                                                &trans     &mo 3     &trans
+&trans  &kp EXCL        &kp AT    &kp HASH        &kp DLLR         &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS  &kp ASTRK                 &kp LPAR                   &kp RPAR  &trans
+&trans  &kp UNDERSCORE  &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none      &trans    &kp LG(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &trans    &trans
+&trans  &kp TILDE       &none     &none           &none            &none      &trans                    &mmv MOVE_DOWN                   &none      &none     &kp LG(LEFT_BRACKET)      &kp LG(RIGHT_BRACKET)      &none     &trans
+                                  &trans          &trans           &trans                                                                &trans     &mo 3     &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
