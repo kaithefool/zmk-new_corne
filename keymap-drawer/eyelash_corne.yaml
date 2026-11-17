@@ -79,8 +79,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
   - {t: 'Sft+Gui+[', s: 'Sft+Gui+{'}
   - {t: 'Sft+Gui+]', s: 'Sft+Gui+}'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -128,8 +128,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
   - {t: 'Sft+Gui+[', s: 'Sft+Gui+{'}
   - {t: 'Sft+Gui+]', s: 'Sft+Gui+}'}
   - {t: '$$mdi:transfer$$', type: trans}
